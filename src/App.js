@@ -1,26 +1,69 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+//import LoginForm from "./components/LoginForm";
+//import RandomUser from "./components/FetchRandomUser";
+//import ImageSlider from "./components/ImageSlider";
+//import Counter from "./components/counter";
+//import Form from "./components/Form";
+import TodoList from "./components/TodoList";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/* class App extends React.Component {
+  state = {
+    visible: true,
+    //    whichComponentToDisplay: "ImageSlider",
+  };
+
+  render() {
+    return (
+      <div>
+        <div className="counter">
+          <div className={this.state.visible ? "visible" : "hidden"}>
+            <Counter />
+          </div>
+          <button
+            onClick={() => {
+              this.setState({ visible: !this.state.visible });
+            }}
+          >
+            Toggle Counter
+          </button>
+        </div>
+        <div className="my-form">
+          <br />
+          <Form />
+        </div>
+      </div>
+    );
+  }
+} */
+
+/* class App extends React.Component {
+  render() {
+    return (
+      <div className="login-form">
+        <LoginForm />
+      </div>
+    );
+  }
+} */
+
+/* class App extends React.Component {
+  render() {
+    return (
+      <div className="random-users">
+        <RandomUser />
+      </div>
+    );
+  }
+} */
+class App extends React.Component {
+  render() {
+    return (
+      <div className="my-app">
+        <TodoList />
+      </div>
+    );
+  }
 }
 
 export default App;
